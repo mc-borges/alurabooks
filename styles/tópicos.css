@@ -1,0 +1,56 @@
+.tópicos {
+    background: var(--azul-degrade);
+    text-align: center;
+
+}
+
+.tópicos__título {
+    padding: 2em 0 1em 0;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    /*Faz uma quebra de linha quando chega no final da tela*/
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 1.5em 0.5em;
+}
+
+.tópicos__link {
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 1em 1em;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+@media  screen and (min-width:1024px){
+    .tópicos{
+        padding-bottom: 2em;
+    }
+    .tópicos__título{
+        font-size: 24px;
+    }
+    .tópicos__item{
+        margin: 2.5em 1em;
+    }
+    .tópicos__link{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .tópicos__título{
+        font-size: 32px;
+    }
+    .tópicos{
+        padding: 1em 25vw 4em 25vw;/*vw viewport, é melhor de ser utilizado para elementos que se ajustam com a tela*/
+    }
+}
